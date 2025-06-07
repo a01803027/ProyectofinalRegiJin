@@ -13,10 +13,10 @@ int main(int argc, char const *argv[])
     Video* vid = &Lalaland;
 
     //con este operador sobrecargado califico mi película
-    vid += 1;
-    vid += 2;
+    Lalaland += 1;
+    Lalaland += 3;
     
     vid ->mostrarInfo();
-    
+
     return 0;
 }
