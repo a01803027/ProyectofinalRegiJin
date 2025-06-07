@@ -2,13 +2,20 @@
 #ifndef PELICULA_HPP
 #define PELICULA_HPP
 
-class Pelicula
+#include "Video.hpp"
+
+class Pelicula: public Video
 {
+private:
+    
+
 public:
+
     Pelicula();
-    void mostrarInfo();
-    friend int operator+(Pelicula,Pelicula);
-    friend int operator+(int,Pelicula);
+    Pelicula(int,std::string,std::string,int);
+    void mostrarInfo() override;
+    float promedio() override;
+    
 };
 
 #endif

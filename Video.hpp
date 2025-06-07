@@ -15,19 +15,17 @@ private:
 protected:
     int id;
     std::string nombre;
-    int duracion;
+    std::string duracion;
     int genero;
     int calificacion;
     vector <int> calificaciones;
 
     Video();
-    Video(int ide, std::string name, int duration, int genre);
+    Video(int ide, std::string name, std::string duration, int genre);
 
 public:
-    void calificar(int);
-    int promedio();
     virtual void mostrarInfo() = 0;
-
+    friend Video& operator+=(Video& video, int calificacion);
 };
 
 #endif

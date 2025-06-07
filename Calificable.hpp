@@ -8,8 +8,8 @@ private:
 
 protected:
 
-    virtual void calificar(int) = 0;
-    virtual int promedio() = 0;
+    //virtual void calificar(int) = 0;
+    virtual float promedio() = 0;
     
 };
 
