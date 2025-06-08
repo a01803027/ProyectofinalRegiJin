@@ -12,7 +12,8 @@ private:
 public:
 
     Pelicula();
-    Pelicula(int,std::string,std::string,int);
+    Pelicula(int,std::string,std::string,std::string);
+    bool soyPelicula();
     void mostrarInfo() override;
     float promedio() override;
     

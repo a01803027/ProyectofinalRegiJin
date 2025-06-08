@@ -5,7 +5,9 @@ using namespace std;
 
 Pelicula::Pelicula():Video{}{}
 
-Pelicula::Pelicula(int m, string p, string v, int e): Video(m, p, v, e) {}
+Pelicula::Pelicula(int m, string p, string v, string e): Video(m, p, v, e) {}
+
+bool Pelicula::soyPelicula(){return true;}
 
 void Pelicula::mostrarInfo(){
     cout << fixed << setprecision(1);
@@ -13,6 +15,7 @@ void Pelicula::mostrarInfo(){
     <<"\tID: 000" << to_string(id)
     <<"\tPelícula: " << nombre
     <<"\tDuración: " << duracion
+    <<"\tGénero: " << genero
     <<"\tCalificación promedio: " << promedio() << endl;
 } 
 
